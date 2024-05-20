@@ -8,6 +8,7 @@ const cors = require('cors');
 const animalRoutes = require('./routes/animalRoutes');
 const usersRoutes = require('./routes/usersRouters');
 const formularioRoutes = require('./routes/formularioRoutes');
+const comentaristaRoutes = require('./routes/comentaristaRoutes');
 
 const port = process.env.PORT || 3000;
 app.use(logger('dev'));
@@ -21,11 +22,12 @@ app.set('port', port);
 animalRoutes(app);
 usersRoutes(app);
 formularioRoutes(app);
+comentaristaRoutes(app);
 
 
 // Dirección IP V4 de la máquina, consultar con ipconfig
 
-server.listen(3000,  '192.168.101.9' || 'localhost', function() {
+server.listen(3000,  '192.168.1.9' || 'localhost', function() {
 
     console.log('Aplicación de NodeJS ' + process.pid + ' inicio en el puerto ' + port);
 });
