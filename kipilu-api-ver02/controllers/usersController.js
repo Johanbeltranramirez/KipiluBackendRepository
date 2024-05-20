@@ -1,6 +1,9 @@
 const Adoptante = require('../models/user'); // Importa el modelo de adoptante
 const userget = require('../models/userget');
 const userid = require('../models/userid');
+const user_update = require('../models/user_update');
+const userDelete = require('../models/userdelete');
+
 
 module.exports = {
   createAdoptante(req, res) {
@@ -52,6 +55,44 @@ module.exports = {
         success: true,
         message: 'Adoptantes encontrados',
         data: data
+      });
+    });
+  },
+
+  // Método para actualizar un adoptante por su ID
+  updateUser(req, res) {
+    const adoptanteId = req.params.id; // Obtén el ID del adoptante de los parámetros de la solicitud
+    const adoptanteData = req.body; // Nuevos datos del adoptante
+
+    user_update.update(adoptanteId, adoptanteData, (err, result) => {
+      if (err) {
+        return res.status(500).json({
+          success: false,
+          message: 'Error al actualizar el adoptante',
+          error: err
+        });
+      }
+      return res.status(200).json({
+        success: true,
+        message: result.message // Mensaje de éxito
+      });
+    });
+  },
+
+  deactivateAdoptante(req, res) {
+    const adoptanteId = req.params.id; // Obtén el ID del adoptante de los parámetros de la solicitud
+  
+    userDelete.delete(adoptanteId, (err, result) => {
+      if (err) {
+        return res.status(500).json({
+          success: false,
+          message: 'Error al desactivar el adoptante',
+          error: err
+        });
+      }
+      return res.status(200).json({
+        success: true,
+        message: result.message // Mensaje de éxito
       });
     });
   },
