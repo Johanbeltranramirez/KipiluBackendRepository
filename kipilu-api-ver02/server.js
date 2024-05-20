@@ -9,6 +9,8 @@ const animalRoutes = require('./routes/animalRoutes');
 const usersRoutes = require('./routes/usersRouters');
 const formularioRoutes = require('./routes/formularioRoutes');
 const comentaristaRoutes = require('./routes/comentaristaRoutes');
+const razaRoutes = require('./routes/razaRoutes');
+
 
 const port = process.env.PORT || 3000;
 app.use(logger('dev'));
@@ -23,11 +25,13 @@ animalRoutes(app);
 usersRoutes(app);
 formularioRoutes(app);
 comentaristaRoutes(app);
+razaRoutes(app);
+
 
 
 // Dirección IP V4 de la máquina, consultar con ipconfig
 
-server.listen(3000,  '192.168.1.9' || 'localhost', function() {
+server.listen(3000,  '192.168.128.3' || 'localhost', function() {
 
     console.log('Aplicación de NodeJS ' + process.pid + ' inicio en el puerto ' + port);
 });
