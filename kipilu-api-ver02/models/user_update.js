@@ -1,9 +1,9 @@
 const db = require('../config/config');
 
-const AdoptanteUpdate = {};
+const user_update = {};
 
 // Método para actualizar un adoptante por su ID
-AdoptanteUpdate.update = (adoptanteId, adoptanteData, result) => {
+user_update.update = (adoptanteId, adoptanteData, result) => {
   const { P_Nombre, S_Nombre, P_Apellido, S_Apellido, Correo, Direccion, Telefono } = adoptanteData;
   
   const sql = `
@@ -30,5 +30,5 @@ AdoptanteUpdate.update = (adoptanteId, adoptanteData, result) => {
   });
 };
 
-module.exports = AdoptanteUpdate;
+module.exports = user_update;
 
