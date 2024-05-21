@@ -1,5 +1,6 @@
 const comentaristaDel = require("../models/comentaristadelete");
 const comentaristaGet = require("../models/comentaristaget");
+const comentaristaPost = require("../models/comentaristacreate");
 
 module.exports = {
   getAllComments(req, res) {
@@ -17,10 +18,26 @@ module.exports = {
         data: comments
       });
     });
-  }
-  // Método para desactivar un comentario por su ID
-  ,
+  },
 
+  // Método para crear un comentario 
+  createComment(req, res) {
+    const comentarista = req.body; // Datos del comentarista
+    comentaristaPost.create(comentarista, (err, data) => {
+      if (err) {
+        return res.status(501).json({
+          success: false,
+          message: 'Error al crear el comentario',
+          error: err
+        });
+      }
+      return res.status(201).json({
+        success: true,
+        message: 'Comentario creado correctamente',
+        data: data // Id del comentarista creado
+      });
+    });
+  },
 
   // Método para desactivar un comentario por su ID
   deactivateComentarista(req, res) {
@@ -39,4 +56,5 @@ module.exports = {
       });
     });
   }
+
 };
