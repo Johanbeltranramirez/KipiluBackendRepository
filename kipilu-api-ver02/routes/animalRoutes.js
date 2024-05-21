@@ -15,4 +15,7 @@ module.exports = (app) => {
 
   // Ruta para actualizar un animal por su ID
   app.put('/api/animales/actualizar/:id', animalController.updateAnimal); // Se añade la ruta para actualizar un animal
+  
+  // Ruta para obtener un animal por su ID
+  app.get('/api/animales/:id', animalController.getAnimalById);
 };

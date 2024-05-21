@@ -93,5 +93,24 @@ module.exports = {
         message: result.message // Mensaje de éxito
       });
     });
+  },
+  
+  // Método para obtener un animal por su ID
+  getAnimalById(req, res) {
+    const animalId = req.params.id; // Obtén el ID del animal de los parámetros de la solicitud
+    AnimalGet.getById(animalId, (err, animal) => { // Obtén el animal utilizando el módulo AnimalGet
+      if (err) {
+        return res.status(500).json({
+          success: false,
+          message: 'Error al obtener el animal por su ID',
+          error: err
+        });
+      }
+      return res.status(200).json({
+        success: true,
+        message: 'Animal obtenido correctamente',
+        data: animal // Datos del animal encontrado
+      });
+    });
   }
 };

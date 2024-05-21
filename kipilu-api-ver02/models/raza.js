@@ -23,4 +23,25 @@ Raza.create = (raza, result) => {
   );
 };
 
+Raza.getAll = (result) => {
+  const sql = `
+    SELECT * FROM Razas
+  `;
+
+  db.query(sql, (err, res) => {
+    if (err) {
+      console.log('Error al obtener las razas: ', err);
+      result(err, null);
+    } else {
+      const razas = res.map((raza) => {
+        return {
+          ID_Raza: raza.ID_Raza,
+          Nombre_Raza: raza.Nombre_Raza
+        };
+      });
+      result(null, razas);
+    }
+  });
+};
+
 module.exports = Raza;

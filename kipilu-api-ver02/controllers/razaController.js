@@ -17,5 +17,22 @@ module.exports = {
         data: data // Id de la raza creada
       });
     });
+  },
+
+  getAllRazas(req, res) {
+    Raza.getAll((err, razas) => {
+      if (err) {
+        return res.status(500).json({
+          success: false,
+          message: 'Error al obtener las razas',
+          error: err
+        });
+      }
+      return res.status(200).json({
+        success: true,
+        message: 'Razas obtenidas correctamente',
+        data: razas
+      });
+    });
   }
 };
