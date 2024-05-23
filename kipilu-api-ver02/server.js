@@ -35,11 +35,9 @@ razaRoutes(app);
 
 // Dirección IP V4 de la máquina, consultar con ipconfig
 
-<<<<<<< HEAD
+
 server.listen(3000,  '192.168.101.9' || 'localhost', function() {
-=======
-server.listen(3000,  '10.175.81.39' || 'localhost', function() {
->>>>>>> e3979619a3d148a95b363da7f385d10d503f994d
+
 
     console.log('Aplicación de NodeJS ' + process.pid + ' inicio en el puerto ' + port);
 });
