@@ -1,8 +1,8 @@
  const knex = require('../../config/db/db');
 
-const formulariocreate = {};
+const formularios = {};
 
-Formularios.create = (formularios, result) => {
+formularios.create = (formularios, result) => {
     knex('formularios')
         .insert({
             Adoptante: formularios.Adoptante,
@@ -21,4 +21,4 @@ Formularios.create = (formularios, result) => {
         });
 };
 
-module.exports = Formularios;
+module.exports = formularios;
