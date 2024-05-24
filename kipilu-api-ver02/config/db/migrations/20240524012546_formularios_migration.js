@@ -11,6 +11,25 @@ exports.up = function(knex) {
       table.foreign('Animal').references('ID_Animal').inTable('Animales');
       table.foreign('Estado_solicitud').references('ID_Solicitud').inTable('Estados_Solicitudes');
       table.foreign('Administrador').references('ID_Administrador').inTable('Administradores');
+    })
+    .then(function() {
+      // Insertar datos
+      return knex('Formularios').insert([
+        { 
+          Adoptante: 119020991, 
+          Animal: 1, 
+          Validacion_donativo: 'NA',
+          Estado_solicitud: 3, 
+          Administrador: 'CC19029900' 
+        },
+        { 
+          Adoptante: 119330923, 
+          Animal: 4, 
+          Validacion_donativo: 'NA',
+          Estado_solicitud: 3, 
+          Administrador: 'CC19029900' 
+        }
+      ]);
     });
   };
   
