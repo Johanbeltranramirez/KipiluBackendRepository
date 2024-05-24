@@ -1,8 +1,8 @@
-const Adoptante = require('../models/user'); // Importa el modelo de adoptante
-const userget = require('../models/userget');
-const userid = require('../models/userid');
-const user_update = require('../models/user_update');
-const userDelete = require('../models/userdelete');
+const Adoptante = require('../models/adoptanteModel/user'); // Importa el modelo de adoptante
+const userget = require('../models/adoptanteModel/userget');
+const userid = require('../models/adoptanteModel/userid');
+const user_update = require('../adoptanteModel/models/user_update');
+const userDelete = require('../adoptanteModel/models/userdelete');
 
 
 module.exports = {

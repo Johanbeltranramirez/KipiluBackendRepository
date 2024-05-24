@@ -1,8 +1,8 @@
-const administradorcreate = require('../models/administradorcreate');
-const AdministradorDel = require('../models/administradordelete');
-const administradorget = require('../models/administradorget');
-const AdministradorGet = require('../models/administradorget');
-const Administrador_update = require('../models/administradorupdate');
+const administradorcreate = require('../models/administradorModel/administradorcreate');
+const AdministradorDel = require('../models/administradorModel/administradordelete');
+const administradorget = require('../models/administradorModel/administradorget');
+const AdministradorGet = require('../models/administradorModel/administradorget');
+const Administrador_update = require('../models/administradorModel/administradorupdate');
 
 module.exports = {
     createAdministrador(req, res){

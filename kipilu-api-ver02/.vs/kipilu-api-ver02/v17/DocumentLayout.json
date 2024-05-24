@@ -1,0 +1,619 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\config\\knexfile.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:config\\knexfile.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\routes\\razaRoutes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:routes\\razaRoutes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\controllers\\usersController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\usersController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\controllers\\razaController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\razaController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\controllers\\formularioController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\formularioController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\adoptanteModel\\user_update.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\adoptanteModel\\user_update.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\adoptanteModel\\userid.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\adoptanteModel\\userid.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\adoptanteModel\\userget.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\adoptanteModel\\userget.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\adoptanteModel\\userdelete.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\adoptanteModel\\userdelete.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\adoptanteModel\\user.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\adoptanteModel\\user.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\formularioModel\\formularioupdate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\formularioModel\\formularioupdate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\formularioModel\\formularioget.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\formularioModel\\formularioget.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\formularioModel\\formulariodelete.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\formularioModel\\formulariodelete.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\comentaristaModel\\comentaristacreate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\comentaristaModel\\comentaristacreate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\formularioModel\\formulariocreate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\formularioModel\\formulariocreate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\controllers\\administradorController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\administradorController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\controllers\\animalController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\animalController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\controllers\\comentaristaController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\comentaristaController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\animalModel\\raza.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\animalModel\\raza.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\animalModel\\animalupdate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\animalModel\\animalupdate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\animalModel\\animaldelete.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\animalModel\\animaldelete.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\animalModel\\animalget.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\animalModel\\animalget.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\animalModel\\animalid.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\animalModel\\animalid.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\animalModel\\animal.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\animalModel\\animal.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\administradorModel\\administradorupdate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\administradorModel\\administradorupdate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\administradorModel\\administradorid.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\administradorModel\\administradorid.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\administradorModel\\administradorget.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\administradorModel\\administradorget.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\administradorModel\\administradordelete.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\administradorModel\\administradordelete.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\administradorModel\\administradorcreate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\administradorModel\\administradorcreate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\comentaristaModel\\comentaristaget.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\comentaristaModel\\comentaristaget.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\comentaristaModel\\comentaristadelete.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\comentaristaModel\\comentaristadelete.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\routes\\administradorRoutes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:routes\\administradorRoutes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\config\\db\\db.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:config\\db\\db.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KipiluBackendRepository\\kipilu-api-ver02\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "razaRoutes.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\routes\\razaRoutes.js",
+              "RelativeDocumentMoniker": "routes\\razaRoutes.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\routes\\razaRoutes.js",
+              "RelativeToolTip": "routes\\razaRoutes.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T04:27:28.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "server.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\server.js",
+              "RelativeDocumentMoniker": "server.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\server.js",
+              "RelativeToolTip": "server.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T04:27:08.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "usersController.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\controllers\\usersController.js",
+              "RelativeDocumentMoniker": "controllers\\usersController.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\controllers\\usersController.js",
+              "RelativeToolTip": "controllers\\usersController.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T04:26:19.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "formularioController.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\controllers\\formularioController.js",
+              "RelativeDocumentMoniker": "controllers\\formularioController.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\controllers\\formularioController.js",
+              "RelativeToolTip": "controllers\\formularioController.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T04:25:09.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "user_update.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\adoptanteModel\\user_update.js",
+              "RelativeDocumentMoniker": "models\\adoptanteModel\\user_update.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\adoptanteModel\\user_update.js",
+              "RelativeToolTip": "models\\adoptanteModel\\user_update.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T04:22:59.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "userid.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\adoptanteModel\\userid.js",
+              "RelativeDocumentMoniker": "models\\adoptanteModel\\userid.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\adoptanteModel\\userid.js",
+              "RelativeToolTip": "models\\adoptanteModel\\userid.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T04:21:38.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "userget.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\adoptanteModel\\userget.js",
+              "RelativeDocumentMoniker": "models\\adoptanteModel\\userget.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\adoptanteModel\\userget.js",
+              "RelativeToolTip": "models\\adoptanteModel\\userget.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T04:19:55.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "userdelete.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\adoptanteModel\\userdelete.js",
+              "RelativeDocumentMoniker": "models\\adoptanteModel\\userdelete.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\adoptanteModel\\userdelete.js",
+              "RelativeToolTip": "models\\adoptanteModel\\userdelete.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T04:18:17.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "knexfile.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\config\\knexfile.js",
+              "RelativeDocumentMoniker": "config\\knexfile.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\config\\knexfile.js",
+              "RelativeToolTip": "config\\knexfile.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T03:13:43.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "user.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\adoptanteModel\\user.js",
+              "RelativeDocumentMoniker": "models\\adoptanteModel\\user.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\adoptanteModel\\user.js",
+              "RelativeToolTip": "models\\adoptanteModel\\user.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T04:16:33.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "formularioupdate.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\formularioModel\\formularioupdate.js",
+              "RelativeDocumentMoniker": "models\\formularioModel\\formularioupdate.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\formularioModel\\formularioupdate.js",
+              "RelativeToolTip": "models\\formularioModel\\formularioupdate.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T04:16:12.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "razaController.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\controllers\\razaController.js",
+              "RelativeDocumentMoniker": "controllers\\razaController.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\controllers\\razaController.js",
+              "RelativeToolTip": "controllers\\razaController.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T04:02:57.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "formularioget.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\formularioModel\\formularioget.js",
+              "RelativeDocumentMoniker": "models\\formularioModel\\formularioget.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\formularioModel\\formularioget.js",
+              "RelativeToolTip": "models\\formularioModel\\formularioget.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T04:13:38.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "formulariodelete.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\formularioModel\\formulariodelete.js",
+              "RelativeDocumentMoniker": "models\\formularioModel\\formulariodelete.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\formularioModel\\formulariodelete.js",
+              "RelativeToolTip": "models\\formularioModel\\formulariodelete.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T04:11:48.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "formulariocreate.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\formularioModel\\formulariocreate.js",
+              "RelativeDocumentMoniker": "models\\formularioModel\\formulariocreate.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\formularioModel\\formulariocreate.js",
+              "RelativeToolTip": "models\\formularioModel\\formulariocreate.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T04:07:09.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "raza.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\animalModel\\raza.js",
+              "RelativeDocumentMoniker": "models\\animalModel\\raza.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\animalModel\\raza.js",
+              "RelativeToolTip": "models\\animalModel\\raza.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T04:00:37.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "animalupdate.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\animalModel\\animalupdate.js",
+              "RelativeDocumentMoniker": "models\\animalModel\\animalupdate.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\animalModel\\animalupdate.js",
+              "RelativeToolTip": "models\\animalModel\\animalupdate.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T03:58:28.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "comentaristaController.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\controllers\\comentaristaController.js",
+              "RelativeDocumentMoniker": "controllers\\comentaristaController.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\controllers\\comentaristaController.js",
+              "RelativeToolTip": "controllers\\comentaristaController.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T03:32:25.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "comentaristacreate.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\comentaristaModel\\comentaristacreate.js",
+              "RelativeDocumentMoniker": "models\\comentaristaModel\\comentaristacreate.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\comentaristaModel\\comentaristacreate.js",
+              "RelativeToolTip": "models\\comentaristaModel\\comentaristacreate.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T03:15:35.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "animaldelete.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\animalModel\\animaldelete.js",
+              "RelativeDocumentMoniker": "models\\animalModel\\animaldelete.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\animalModel\\animaldelete.js",
+              "RelativeToolTip": "models\\animalModel\\animaldelete.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T03:55:07.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "animalController.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\controllers\\animalController.js",
+              "RelativeDocumentMoniker": "controllers\\animalController.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\controllers\\animalController.js",
+              "RelativeToolTip": "controllers\\animalController.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T03:27:49.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "administradorController.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\controllers\\administradorController.js",
+              "RelativeDocumentMoniker": "controllers\\administradorController.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\controllers\\administradorController.js",
+              "RelativeToolTip": "controllers\\administradorController.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T03:27:11.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "animalget.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\animalModel\\animalget.js",
+              "RelativeDocumentMoniker": "models\\animalModel\\animalget.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\animalModel\\animalget.js",
+              "RelativeToolTip": "models\\animalModel\\animalget.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T03:56:10.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "animalid.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\animalModel\\animalid.js",
+              "RelativeDocumentMoniker": "models\\animalModel\\animalid.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\animalModel\\animalid.js",
+              "RelativeToolTip": "models\\animalModel\\animalid.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T03:57:20.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "animal.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\animalModel\\animal.js",
+              "RelativeDocumentMoniker": "models\\animalModel\\animal.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\animalModel\\animal.js",
+              "RelativeToolTip": "models\\animalModel\\animal.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T03:46:51.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "administradorcreate.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\administradorModel\\administradorcreate.js",
+              "RelativeDocumentMoniker": "models\\administradorModel\\administradorcreate.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\administradorModel\\administradorcreate.js",
+              "RelativeToolTip": "models\\administradorModel\\administradorcreate.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T03:14:46.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "comentaristaget.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\comentaristaModel\\comentaristaget.js",
+              "RelativeDocumentMoniker": "models\\comentaristaModel\\comentaristaget.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\comentaristaModel\\comentaristaget.js",
+              "RelativeToolTip": "models\\comentaristaModel\\comentaristaget.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T03:20:48.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "administradordelete.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\administradorModel\\administradordelete.js",
+              "RelativeDocumentMoniker": "models\\administradorModel\\administradordelete.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\administradorModel\\administradordelete.js",
+              "RelativeToolTip": "models\\administradorModel\\administradordelete.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T03:38:00.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "administradorget.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\administradorModel\\administradorget.js",
+              "RelativeDocumentMoniker": "models\\administradorModel\\administradorget.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\administradorModel\\administradorget.js",
+              "RelativeToolTip": "models\\administradorModel\\administradorget.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T03:40:18.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "administradorid.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\administradorModel\\administradorid.js",
+              "RelativeDocumentMoniker": "models\\administradorModel\\administradorid.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\administradorModel\\administradorid.js",
+              "RelativeToolTip": "models\\administradorModel\\administradorid.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T03:42:40.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "administradorupdate.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\administradorModel\\administradorupdate.js",
+              "RelativeDocumentMoniker": "models\\administradorModel\\administradorupdate.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\administradorModel\\administradorupdate.js",
+              "RelativeToolTip": "models\\administradorModel\\administradorupdate.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T03:44:05.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "comentaristadelete.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\comentaristaModel\\comentaristadelete.js",
+              "RelativeDocumentMoniker": "models\\comentaristaModel\\comentaristadelete.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\models\\comentaristaModel\\comentaristadelete.js",
+              "RelativeToolTip": "models\\comentaristaModel\\comentaristadelete.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T03:16:12.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "administradorRoutes.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\routes\\administradorRoutes.js",
+              "RelativeDocumentMoniker": "routes\\administradorRoutes.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\routes\\administradorRoutes.js",
+              "RelativeToolTip": "routes\\administradorRoutes.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T03:27:59.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "db.js",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\config\\db\\db.js",
+              "RelativeDocumentMoniker": "config\\db\\db.js",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\config\\db\\db.js",
+              "RelativeToolTip": "config\\db\\db.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-24T03:14:09.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\package.json",
+              "RelativeDocumentMoniker": "package.json",
+              "ToolTip": "C:\\KipiluBackendRepository\\kipilu-api-ver02\\package.json",
+              "RelativeToolTip": "package.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-24T03:06:39.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

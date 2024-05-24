@@ -1,8 +1,8 @@
-const Animal = require('../models/animal');
-const AnimalGet = require('../models/animalget'); // Renombramos el segundo módulo como AnimalGet
-const AnimalId = require('../models/animalid'); // Importamos el modelo animalid
-const AnimalDel = require('../models/animaldelete'); // Importamos el modelo animaldelete
-const AnimalUpdate = require('../models/animalupdate'); // Importamos el modelo animalupdate
+const Animal = require('../models/animalModel/animal');
+const AnimalGet = require('../models/animalModel/animalget'); // Renombramos el segundo módulo como AnimalGet
+const AnimalId = require('../models/animalModel/animalid'); // Importamos el modelo animalid
+const AnimalDel = require('../models/animalModel/animaldelete'); // Importamos el modelo animaldelete
+const AnimalUpdate = require('../models/animalModel/animalupdate'); // Importamos el modelo animalupdate
 
 module.exports = {
   createAnimal(req, res) {

@@ -1,7 +1,7 @@
-const formularioget = require('../models/formularioget'); // Renombramos el segundo módulo como Formulario_Get
-const formulariodelete = require('../models/formulariodelete'); // Importamos el modelo formulario_delete
-const formularioupdate = require('../models/formularioupdate'); // Importamos el modelo formulario_update
-const formulariocreate = require('../models/formulariocreate');
+const formularioget = require('../models/formularioModel/formularioget'); // Renombramos el segundo módulo como Formulario_Get
+const formulariodelete = require('../models/formularioModel/formulariodelete'); // Importamos el modelo formulario_delete
+const formularioupdate = require('../models/formularioModel/formularioupdate'); // Importamos el modelo formulario_update
+const formulariocreate = require('../models/formularioModel/formulariocreate');
 
 module.exports = {
 

@@ -1,6 +1,6 @@
-const comentaristaDel = require("../models/comentaristadelete");
-const comentaristaGet = require("../models/comentaristaget");
-const comentaristaPost = require("../models/comentaristacreate");
+const comentaristaDel = require("../models/comentaristaModel/comentaristadelete");
+const comentaristaGet = require("../models/comentaristaModel/comentaristaget");
+const comentaristaPost = require("../models/comentaristaModel/comentaristacreate");
 
 module.exports = {
   getAllComments(req, res) {

@@ -1,4 +1,4 @@
-const Raza = require('../models/raza');
+const Raza = require('../models/animalModel/raza');
 
 module.exports = {
   createRaza(req, res) {
