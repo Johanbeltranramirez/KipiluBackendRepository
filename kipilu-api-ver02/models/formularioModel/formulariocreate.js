@@ -1,15 +1,15 @@
-const knex = require('../../config/db/db');
+ const knex = require('../../config/db/db');
 
 const formulariocreate = {};
 
-formulariocreate.create = (formularios, result) => {
+Formularios.create = (formularios, result) => {
     knex('formularios')
         .insert({
             Adoptante: formularios.Adoptante,
             Animal: formularios.Animal,
-            Validacion_donativo: 'N/A',
-            Estado_solicitud: 3,
-            Administrador: 'CC1027524883'
+            Validacion_donativo: formularios.Validacion_donativo,
+            Estado_solicitud: formularios.Estado_solicitud,
+            Administrador: formularios.Administrador
         })
         .then((res) => {
             console.log('Id del nuevo formulario: ', res[0]);
@@ -21,4 +21,4 @@ formulariocreate.create = (formularios, result) => {
         });
 };
 
-module.exports = formulariocreate;
+module.exports = Formularios;
