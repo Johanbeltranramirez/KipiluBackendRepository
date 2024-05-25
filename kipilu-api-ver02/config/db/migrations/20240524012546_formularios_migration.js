@@ -17,14 +17,14 @@ exports.up = function(knex) {
       return knex('Formularios').insert([
         { 
           Adoptante: 119020991, 
-          Animal: 1, 
+          Animal: 2, 
           Validacion_donativo: 'NA',
           Estado_solicitud: 3, 
           Administrador: 'CC19029900' 
         },
         { 
           Adoptante: 119330923, 
-          Animal: 4, 
+          Animal: 3, 
           Validacion_donativo: 'NA',
           Estado_solicitud: 3, 
           Administrador: 'CC19029900' 
