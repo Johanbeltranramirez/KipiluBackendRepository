@@ -4,15 +4,15 @@ const formularioupdate = {};
 
 // Método para actualizar un formulario por su ID
 formularioupdate.update = (IdForm, FormData, result) => {
-    const { Adoptante, Animal, Validacion_Donativo, Estado_Solicitud, Administrador } = FormData;
+    const { Adoptante, Animal, Validacion_donativo, Estado_solicitud, Administrador } = FormData;
 
-    knex('formularios')
+    knex('Formularios') // Asegúrate de que el nombre de la tabla coincida exactamente con el de la base de datos
         .where('ID_Formulario', IdForm)
         .update({
             Adoptante: Adoptante,
             Animal: Animal,
-            Validacion_donativo: Validacion_Donativo,
-            Estado_solicitud: Estado_Solicitud,
+            Validacion_donativo: Validacion_donativo,
+            Estado_solicitud: Estado_solicitud,
             Administrador: Administrador
         })
         .then(() => {

@@ -36,7 +36,7 @@ razaRoutes(app);
 // Dirección IP V4 de la máquina, consultar con ipconfig
 
 
-server.listen(3000,  '192.168.101.9' || 'localhost', function() {
+server.listen(3000,  '192.168.128.3' || 'localhost', function() {
 
 
     console.log('Aplicación de NodeJS ' + process.pid + ' inicio en el puerto ' + port);
