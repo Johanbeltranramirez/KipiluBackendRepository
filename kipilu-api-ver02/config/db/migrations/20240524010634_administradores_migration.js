@@ -12,8 +12,10 @@ exports.up = function(knex) {
       return knex('Administradores').insert([
         { 
           ID_Administrador: 'CC19029900',
-          P_Nombre: 'Paula Andrea',
-          P_Apellido: 'Cruz Zapata',
+          P_Nombre: 'Paula',
+          S_Nombre: 'Andrea',
+          P_Apellido: 'Cruz',
+          S_Apellido: 'Zapata',
           Contrasena: 'ANSDI1998@'
         },
         { 
