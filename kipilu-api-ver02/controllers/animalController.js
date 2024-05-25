@@ -3,6 +3,7 @@ const AnimalGet = require('../models/animalModel/animalget'); // Renombramos el 
 const AnimalId = require('../models/animalModel/animalid'); // Importamos el modelo animalid
 const AnimalDel = require('../models/animalModel/animaldelete'); // Importamos el modelo animaldelete
 const AnimalUpdate = require('../models/animalModel/animalupdate'); // Importamos el modelo animalupdate
+const AnimalAlter = require('../models/animalModel/animalalter'); // Importamos el modelo animalalter
 
 module.exports = {
   createAnimal(req, res) {
@@ -110,6 +111,24 @@ module.exports = {
         success: true,
         message: 'Animal obtenido correctamente',
         data: animal // Datos del animal encontrado
+      });
+    });
+  },
+
+  // Método para cambiar el estado de un animal por su ID
+  changeAnimalState(req, res) {
+    const animalId = req.params.id; // Obtén el ID del animal de los parámetros de la solicitud
+    AnimalAlter.updateStateById(animalId, (err, result) => { // Cambia el estado del animal utilizando el módulo AnimalAlter
+      if (err) {
+        return res.status(500).json({
+          success: false,
+          message: 'Error al cambiar el estado del animal',
+          error: err
+        });
+      }
+      return res.status(200).json({
+        success: true,
+        message: 'Estado del animal actualizado correctamente'
       });
     });
   }

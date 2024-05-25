@@ -18,4 +18,8 @@ module.exports = (app) => {
   
   // Ruta para obtener un animal por su ID
   app.get('/api/animales/:id', animalController.getAnimalById);
+
+  // Ruta para cambiar el estado de un animal por su ID
+  app.put('/api/animales/cambiarEstado/:id', animalController.changeAnimalState); // Nueva ruta para cambiar el estado de un animal
 };
+
