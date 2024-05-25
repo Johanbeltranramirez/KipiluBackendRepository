@@ -21,7 +21,8 @@ exports.up = function(knex) {
         { 
           ID_Administrador: 'CC1027524883',
           P_Nombre: 'Johan',
-          P_Apellido: 'Ramírez Beltrán',
+          P_Apellido: 'Ramírez',
+          S_Apellido: 'Beltrán',
           Contrasena: 'jfrb1234'
         }
       ]);
