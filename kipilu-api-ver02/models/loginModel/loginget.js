@@ -1,17 +1,27 @@
-const knex = require('../../config/db/db');
+const knex = require('../../../config/db/db');
 
-const loginGet = {}; 
+const loginget = {};
 
-loginGet.getAll = (result) => {
-    knex.select('ID_Administrador', 'Contrasena').from('Administradores') // Cambio de '*' a las columnas deseadas
-        .then((logins) => { 
-            console.log('Contraseñas obtenidas correctamente:', logins);
-            result(null, logins);
+loginget.verifyCredentials = (ID_Administrador, Contrasena, result) => {
+    knex.select('ID_Administrador', 'Contrasena')
+        .from('Administradores')
+        .where({
+            ID_Administrador: ID_Administrador,
+            Contrasena: Contrasena
+        })
+        .then((res) => {
+            if (res.length > 0) {
+                console.log('Administrador encontrado: ', res[0]);
+                result(null, res[0]);
+            } else {
+                console.log('Administrador no encontrado o contraseña incorrecta.');
+                result(null, null);
+            }
         })
         .catch((err) => {
-            console.error('Error al obtener administradores:', err);
+            console.log('Error al verificar las credenciales del administrador: ', err);
             result(err, null);
         });
 };
 
-module.exports = loginGet;
+module.exports = loginget;
