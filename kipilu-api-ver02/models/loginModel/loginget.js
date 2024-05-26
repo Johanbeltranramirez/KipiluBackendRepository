@@ -1,4 +1,4 @@
-const knex = require('../../../config/db/db');
+const knex = require('../../config/db/db');
 
 const loginget = {};
 

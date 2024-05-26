@@ -1,4 +1,4 @@
-const loginget = require('../models/animalModel/loginModel/loginget');
+const loginget = require('../models/loginModel/loginget');
 
 module.exports = {
     login(req, res) {
