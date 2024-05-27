@@ -1,21 +1,37 @@
-const loginGet = require('../models/loginModel/loginget');
+const loginget = require('../models/loginModel/loginget');
 
 module.exports = {
-    getAllLogins(req, res) { // Renombrado para seguir la convención camelCase
-        loginGet.getAll((err, logins) => { // Cambio de 'login' a 'logins' para mayor claridad
+    login(req, res) {
+        const { ID_Administrador, Contrasena } = req.body; // Datos de las credenciales del administrador
+
+        if (!ID_Administrador || !Contrasena) {
+            return res.status(400).json({
+                success: false,
+                message: 'ID_Administrador y Contrasena son requeridos'
+            });
+        }
+
+        loginget.verifyCredentials(ID_Administrador, Contrasena, (err, administrador) => {
             if (err) {
                 return res.status(500).json({
                     success: false,
-                    message: 'Error al obtener las contraseñas',
+                    message: 'Error al verificar las credenciales del administrador',
                     error: err
                 });
             }
+
+            if (!administrador) {
+                return res.status(401).json({
+                    success: false,
+                    message: 'ID_Administrador o Contrasena incorrectos'
+                });
+            }
+
             return res.status(200).json({
                 success: true,
-                message: 'Contraseñas obtenidas correctamente',
-                data: logins
+                message: 'Administrador autenticado correctamente',
+                data: administrador
             });
         });
     }
 };
-
