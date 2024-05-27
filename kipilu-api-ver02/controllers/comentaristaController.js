@@ -20,9 +20,8 @@ module.exports = {
     });
   },
 
-  // Método para crear un comentario 
   createComment(req, res) {
-    const comentarista = req.body; // Datos del comentarista
+    const comentarista = req.body;
     comentaristaPost.create(comentarista, (err, data) => {
       if (err) {
         return res.status(501).json({
@@ -34,12 +33,11 @@ module.exports = {
       return res.status(201).json({
         success: true,
         message: 'Comentario creado correctamente',
-        data: data // Id del comentarista creado
+        data: data
       });
     });
   },
 
-  // Método para desactivar un comentario por su ID
   deactivateComentarista(req, res) {
     const commentId = req.params.id;
     comentaristaDel.delete(commentId, (err, result) => {
@@ -52,9 +50,8 @@ module.exports = {
       }
       return res.status(200).json({
         success: true,
-        message: result.message // Mensaje de éxito
+        message: result.message
       });
     });
   }
-
 };

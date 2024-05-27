@@ -5,23 +5,22 @@ const AdministradorGet = require('../models/administradorModel/administradorget'
 const Administrador_update = require('../models/administradorModel/administradorupdate');
 
 module.exports = {
-    createAdministrador(req, res){
+    createAdministrador(req, res) {
         const administrador = req.body; //Datos del administrador
-        administradorcreate.create(administrador, (err, date) => {
+        administradorcreate.create(administrador, (err, data) => {
             if (err) {
                 return res.status(501).json({
                     success: false,
                     message: 'Error al crear el administrador',
-                    rror: err
-               });
+                    error: err
+                });
             }
             return res.status(201).json({
-              success: true,
-              message: 'Administrador creado correctamente',
-              data: administrador // ID del adoptante creado
+                success: true,
+                message: 'Administrador creado correctamente',
+                data: administrador // ID del administrador creado
             });
         });
-             
     },
 
     getAllAdministrador(req, res) {
@@ -41,57 +40,57 @@ module.exports = {
         });
     },
 
-    //Metodo para desactivar el administrador por ID 
-    desactivateAdministrador(req, res){
-      const administradorId = req.params.id;
-      AdministradorDel.delete(administradorId, (err, result) =>{
-        if(err) {
-          return res.status(500).json({
-            success: false,
-            message: 'Error al desactivar el Administrador',
-            error: err
-          });
-        }
-        return res.status(200).json({
-          success: true,
-          message: result.message
+    // Método para desactivar el administrador por ID 
+    desactivateAdministrador(req, res) {
+        const administradorId = req.params.id;
+        AdministradorDel.delete(administradorId, (err, result) => {
+            if (err) {
+                return res.status(500).json({
+                    success: false,
+                    message: 'Error al desactivar el Administrador',
+                    error: err
+                });
+            }
+            return res.status(200).json({
+                success: true,
+                message: result.message
+            });
         });
-      });
     },
 
     getAdministradorById(req, res) {
-      const administradorId = req.params.id; // Obtén el ID del administrador de los parámetros de la solicitud
-      AdministradorGet.getById(administradorId, (err, administrador) => { // Obtén el administrador utilizando el módulo AdmistradorGet
-        if (err) {
-          return res.status(500).json({
-            success: false,
-            message: 'Error al obtener el administrador por su ID',
-            error: err
-          });
-        }
-        return res.status(200).json({
-          success: true,
-          message: 'Administrador obtenido correctamente',
-          data: administrador // Datos del animal encontrado
+        const administradorId = req.params.id; // Obtén el ID del administrador de los parámetros de la solicitud
+        AdministradorGet.getById(administradorId, (err, administrador) => { // Obtén el administrador utilizando el módulo AdministradorGet
+            if (err) {
+                return res.status(500).json({
+                    success: false,
+                    message: 'Error al obtener el administrador por su ID',
+                    error: err
+                });
+            }
+            return res.status(200).json({
+                success: true,
+                message: 'Administrador obtenido correctamente',
+                data: administrador // Datos del administrador encontrado
+            });
         });
-      });
     },
 
-    updateAdministrador(req, res){
-      const administradorId = req.params.id; // Obtén el ID del administrador de los parametros de la solicitud
-      const newData = req.body;
-      Administrador_update.update(administradorId, newData, (err, result) => {
-        if (err) {
-          return res.status(500).json({
-            success: false,
-            message: 'Error al actualizar el administrador',
-            error: err
-          });
-        }
-        return res.status(200).json({
-          success: true,
-          message: err
+    updateAdministrador(req, res) {
+        const administradorId = req.params.id; // Obtén el ID del administrador de los parámetros de la solicitud
+        const newData = req.body;
+        Administrador_update.update(administradorId, newData, (err, result) => {
+            if (err) {
+                return res.status(500).json({
+                    success: false,
+                    message: 'Error al actualizar el administrador',
+                    error: err
+                });
+            }
+            return res.status(200).json({
+                success: true,
+                message: 'Administrador actualizado correctamente'
+            });
         });
-      });
     }
-}
+};

@@ -6,7 +6,7 @@ module.exports = (app) => {
   app.get('/api/formularios', formularioController.getAllForms);
 
   // Ruta para crear el formulario
-  app.post('/api/formularios/create', formularioController.createformulario); 
+  app.post('/api/formularios/create', formularioController.createFormulario); 
 
   // Ruta para desactivar o eliminar un formulario por su ID
   app.delete('/api/formularios/eliminar/:id', formularioController.deactivateFormulario); // Recordar: Se añade /:id al final de la ruta

@@ -1,9 +1,9 @@
 const Animal = require('../models/animalModel/animal');
-const AnimalGet = require('../models/animalModel/animalget'); // Renombramos el segundo módulo como AnimalGet
-const AnimalId = require('../models/animalModel/animalid'); // Importamos el modelo animalid
-const AnimalDel = require('../models/animalModel/animaldelete'); // Importamos el modelo animaldelete
-const AnimalUpdate = require('../models/animalModel/animalupdate'); // Importamos el modelo animalupdate
-const AnimalAlter = require('../models/animalModel/animalalter'); // Importamos el modelo animalalter
+const AnimalGet = require('../models/animalModel/animalget');
+const AnimalId = require('../models/animalModel/animalid');
+const AnimalDel = require('../models/animalModel/animaldelete');
+const AnimalUpdate = require('../models/animalModel/animalupdate');
+const AnimalAlter = require('../models/animalModel/animalalter');
 
 module.exports = {
   createAnimal(req, res) {
@@ -25,7 +25,7 @@ module.exports = {
   },
 
   getAllAnimals(req, res) {
-    AnimalGet.getAll((err, animals) => { // Utilizamos AnimalGet en lugar de Animal
+    AnimalGet.getAll((err, animals) => {
       if (err) {
         return res.status(500).json({
           success: false,
@@ -36,14 +36,14 @@ module.exports = {
       return res.status(200).json({
         success: true,
         message: 'Animales obtenidos correctamente',
-        data: animals // Datos de todos los animales
+        data: animals
       });
     });
   },
 
   getAllAnimalsBySpecies(req, res) {
-    const especieId = req.params.especieId; // Obtén el ID de la especie de los parámetros de la solicitud
-    AnimalId.selectAllBySpecies(especieId, (err, animals) => { // Utilizamos AnimalId para obtener los animales por especie
+    const especieId = req.params.especieId;
+    AnimalId.selectAllBySpecies(especieId, (err, animals) => {
       if (err) {
         return res.status(500).json({
           success: false,
@@ -54,15 +54,14 @@ module.exports = {
       return res.status(200).json({
         success: true,
         message: 'Animales obtenidos por especie correctamente',
-        data: animals // Datos de todos los animales que cumplen con la especie especificada
+        data: animals
       });
     });
   },
 
-  // Método para desactivar un animal por su ID
   deactivateAnimal(req, res) {
-    const animalId = req.params.id; // Obtén el ID del animal de los parámetros de la solicitud
-    AnimalDel.delete(animalId, (err, result) => { // Desactiva el animal utilizando el módulo AnimalDel
+    const animalId = req.params.id;
+    AnimalDel.delete(animalId, (err, result) => {
       if (err) {
         return res.status(500).json({
           success: false,
@@ -72,16 +71,15 @@ module.exports = {
       }
       return res.status(200).json({
         success: true,
-        message: result.message // Mensaje de éxito
+        message: result.message
       });
     });
   },
 
-  // Método para actualizar un animal por su ID
   updateAnimal(req, res) {
-    const animalId = req.params.id; // Obtén el ID del animal de los parámetros de la solicitud
-    const newData = req.body; // Nuevos datos del animal
-    AnimalUpdate.update(animalId, newData, (err, result) => { // Actualiza el animal utilizando el módulo AnimalUpdate
+    const animalId = req.params.id;
+    const newData = req.body;
+    AnimalUpdate.update(animalId, newData, (err, result) => {
       if (err) {
         return res.status(500).json({
           success: false,
@@ -91,15 +89,14 @@ module.exports = {
       }
       return res.status(200).json({
         success: true,
-        message: result.message // Mensaje de éxito
+        message: result.message
       });
     });
   },
   
-  // Método para obtener un animal por su ID
   getAnimalById(req, res) {
-    const animalId = req.params.id; // Obtén el ID del animal de los parámetros de la solicitud
-    AnimalGet.getById(animalId, (err, animal) => { // Obtén el animal utilizando el módulo AnimalGet
+    const animalId = req.params.id;
+    AnimalGet.getById(animalId, (err, animal) => {
       if (err) {
         return res.status(500).json({
           success: false,
@@ -110,15 +107,14 @@ module.exports = {
       return res.status(200).json({
         success: true,
         message: 'Animal obtenido correctamente',
-        data: animal // Datos del animal encontrado
+        data: animal
       });
     });
   },
 
-  // Método para cambiar el estado de un animal por su ID
   changeAnimalState(req, res) {
-    const animalId = req.params.id; // Obtén el ID del animal de los parámetros de la solicitud
-    AnimalAlter.updateStateById(animalId, (err, result) => { // Cambia el estado del animal utilizando el módulo AnimalAlter
+    const animalId = req.params.id;
+    AnimalAlter.updateStateById(animalId, (err, result) => {
       if (err) {
         return res.status(500).json({
           success: false,
