@@ -11,12 +11,12 @@ exports.up = function(knex) {
       // Insertar datos
       return knex('Administradores').insert([
         { 
-          ID_Administrador: 'Default',
+          ID_Administrador: 'Form',
           P_Nombre: 'Paula',
           S_Nombre: 'Andrea',
           P_Apellido: 'Cruz',
           S_Apellido: 'Zapata',
-          Contrasena: 'Default@$'
+          Contrasena: 'F0rm5'
         },
         { 
           ID_Administrador: 'CC1027524883',
