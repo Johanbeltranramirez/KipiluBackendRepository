@@ -20,14 +20,14 @@ exports.up = function(knex) {
           Animal: 2, 
           Validacion_donativo: 'NA',
           Estado_solicitud: 3, 
-          Administrador: 'CC19029900' 
+          Administrador: 'Form' 
         },
         { 
           Adoptante: 119330923, 
           Animal: 3, 
           Validacion_donativo: 'NA',
           Estado_solicitud: 3, 
-          Administrador: 'CC19029900' 
+          Administrador: 'Form' 
         }
       ]);
     });
