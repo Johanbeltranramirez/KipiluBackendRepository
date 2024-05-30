@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "jest"
-   
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "engines": {
-      "node": ">=20.0.0" },
+    "node": ">=20.0.0"
+  },
   "dependencies": {
     "app": "^0.1.0",
     "axios": "^1.6.8",

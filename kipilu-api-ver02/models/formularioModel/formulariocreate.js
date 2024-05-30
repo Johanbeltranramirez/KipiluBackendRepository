@@ -18,7 +18,7 @@ formularios.create = (formulariosData, result) => {
     const defaultValues = {
         Validacion_donativo: 'NA',
         Estado_solicitud: 3,
-        Administrador: 'Default'
+        Administrador: 'Form'
     };
 
     // Combinamos los valores predeterminados con los datos del formulario

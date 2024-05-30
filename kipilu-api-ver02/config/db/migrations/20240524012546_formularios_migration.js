@@ -20,7 +20,7 @@ exports.up = function(knex) {
           Animal: 2, 
           Validacion_donativo: 'NA',
           Estado_solicitud: 3, 
-          Administrador: 'Form' 
+          Administrador: 'Form'
         },
         { 
           Adoptante: 119330923, 
