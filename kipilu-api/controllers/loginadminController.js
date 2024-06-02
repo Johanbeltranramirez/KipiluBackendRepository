@@ -1,4 +1,4 @@
-const loginget = require('../models/loginModel/loginget');
+const loginget = require('../models/loginModel/loginadminget');
 
 module.exports = {
     login(req, res) {

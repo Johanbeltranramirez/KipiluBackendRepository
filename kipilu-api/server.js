@@ -12,8 +12,8 @@ const usersRoutes = require('./routes/usersRouters');
 const formularioRoutes = require('./routes/formularioRoutes');
 const comentaristaRoutes = require('./routes/comentaristaRoutes');
 const razaRoutes = require('./routes/razaRoutes');
-const loginRoutes = require('./routes/loginRoutes');
-
+const loginadminRoutes = require('./routes/loginadminRoutes');
+const loginsuperadminRoutes = require('./routes/loginsuperadminRoutes');
 
 const port = process.env.PORT || 3000;
 app.use(logger('dev'));
@@ -30,8 +30,8 @@ usersRoutes(app);
 formularioRoutes(app);
 comentaristaRoutes(app);
 razaRoutes(app);
-loginRoutes(app);
-
+loginadminRoutes(app);
+loginsuperadminRoutes(app);
 
 
 // Dirección IP V4 de la máquina, consultar con ipconfig
