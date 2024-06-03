@@ -5,6 +5,7 @@ const administradorget = {};
 administradorget.getAll = (result) => {
     knex.select('*').from('administradores')
         .then((administradores) => {
+            // No es necesario intentar "desencriptar" las contraseñas
             console.log('Administradores obtenidos correctamente: ', administradores);
             result(null, administradores);
         })

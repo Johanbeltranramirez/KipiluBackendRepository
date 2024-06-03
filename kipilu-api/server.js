@@ -37,7 +37,7 @@ loginsuperadminRoutes(app);
 // Dirección IP V4 de la máquina, consultar con ipconfig
 
 
-server.listen(3000,  '192.168.10.16' || 'localhost', function() {
+server.listen(3000,  '192.168.2.15' || 'localhost', function() {
 
 
     console.log('Aplicación de NodeJS ' + process.pid + ' inicio en el puerto ' + port);
