@@ -19,14 +19,14 @@ exports.up = function(knex) {
           S_Nombre: 'Andrea',
           P_Apellido: 'Cruz',
           S_Apellido: 'Zapata',
-          Contrasena: 'password1'
+          Contrasena: 'F0rm5'
         },
         { 
           ID_Administrador: 'CC1027524883',
           P_Nombre: 'Johan',
           P_Apellido: 'Ramírez',
           S_Apellido: 'Beltrán',
-          Contrasena: 'password2'
+          Contrasena: 'CC1027524883'
         }
       ];
 
