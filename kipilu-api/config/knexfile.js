@@ -6,7 +6,7 @@ const knexConfig = {
     connection: {
       host: 'localhost',
       user: 'root',
-      password: 'JFRB131415hola',
+      password: '',
       database: 'kipiludb'
     },
     migrations: {
