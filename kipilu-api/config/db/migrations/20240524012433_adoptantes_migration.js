@@ -1,6 +1,6 @@
 exports.up = function(knex) {
   return knex.schema.createTable('Adoptantes', function(table) {
-    table.integer('ID_Adoptante').unsigned().notNullable().primary();
+    table.integer('ID_Adoptante', 10).unsigned().notNullable().primary();
     table.string('P_Nombre', 20).notNullable();
     table.string('S_Nombre', 20).nullable();
     table.string('P_Apellido', 20).notNullable();
