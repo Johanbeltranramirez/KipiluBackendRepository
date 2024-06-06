@@ -3,7 +3,7 @@ const saltRounds = 10;
 
 exports.up = function(knex) {
     return knex.schema.createTable('Super_admins', function(table) {
-        table.string('ID_Superadmin', 25).notNullable().primary();
+        table.string('ID_Superadmin', 12).notNullable().primary();
         table.string('P_Nombre', 20).notNullable();
         table.string('S_Nombre', 20).nullable();
         table.string('P_Apellido', 20).notNullable();
