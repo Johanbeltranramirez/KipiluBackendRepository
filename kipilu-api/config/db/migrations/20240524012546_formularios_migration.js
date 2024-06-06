@@ -3,7 +3,7 @@ exports.up = function(knex) {
     table.increments('ID_Formulario').primary();
     table.integer('ID_Adoptante').unsigned().notNullable();
     table.integer('ID_Animal').unsigned().notNullable();
-    table.string('Validacion_donativo', 4).notNullable();
+    table.string('Validacion_donativo', 2).notNullable();
     table.integer('Estado_solicitud').unsigned().nullable();
     table.string('Administrador', 25).notNullable();
 
