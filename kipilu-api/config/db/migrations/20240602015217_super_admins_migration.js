@@ -10,7 +10,7 @@ exports.up = function(knex) {
         table.string('S_Apellido', 20).nullable();
         table.string('Contrasena', 100).notNullable();
         table.string('Correo', 40).notNullable();
-        table.string('Telefono', 20).notNullable();
+        table.string('Telefono', 15).notNullable();
     })
     .then(async function() {
         // Datos a insertar con las contraseñas en texto plano
