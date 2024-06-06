@@ -1,7 +1,7 @@
 exports.up = function(knex) {
     return knex.schema.createTable('Estados_Animales', function(table) {
       table.integer('ID_Estado').unsigned().notNullable().primary();
-      table.string('Nombre_Proceso', 30).notNullable();
+      table.string('Nombre_Proceso', 25).notNullable();
     })
     .then(function() {
       // Insertar datos
