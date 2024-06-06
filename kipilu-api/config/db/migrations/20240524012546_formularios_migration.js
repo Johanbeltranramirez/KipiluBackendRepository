@@ -5,7 +5,7 @@ exports.up = function(knex) {
     table.integer('ID_Animal').unsigned().notNullable();
     table.string('Validacion_donativo', 2).notNullable();
     table.integer('Estado_solicitud').unsigned().nullable();
-    table.string('Administrador', 25).notNullable();
+    table.string('Administrador', 12).notNullable();
 
     table.foreign('ID_Adoptante').references('ID_Adoptante').inTable('Adoptantes');
     table.foreign('ID_Animal').references('ID_Animal').inTable('Animales');
