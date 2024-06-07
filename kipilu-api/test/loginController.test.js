@@ -3,18 +3,18 @@ const request = require('supertest');
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-const loginController = require('../controllers/loginController');
+const loginController = require('../controllers/loginadminController');
 
 app.use(bodyParser.json());
 app.post('/api/login', loginController.login);
 
-jest.mock('../models/loginModel/loginget', () => ({
+jest.mock('../models/loginModel/loginadminget', () => ({
     verifyCredentials: jest.fn(),
 }));
 
 describe('Login Controller', () => {
     it('should authenticate a valid administrador', async () => {
-        const loginget = require('../models/loginModel/loginget');
+        const loginget = require('../models/loginModel/loginadminget');
         loginget.verifyCredentials.mockImplementation((ID_Administrador, Contrasena, callback) => {
             callback(null, { id: 1, name: 'Admin1', ID_Administrador, Contrasena });
         });
@@ -39,7 +39,7 @@ describe('Login Controller', () => {
     });
 
     it('should return 401 if credentials are incorrect', async () => {
-        const loginget = require('../models/loginModel/loginget');
+        const loginget = require('../models/loginModel/loginadminget');
         loginget.verifyCredentials.mockImplementation((ID_Administrador, Contrasena, callback) => {
             callback(null, null);
         });
@@ -54,7 +54,7 @@ describe('Login Controller', () => {
     });
 
     it('should return 500 if there is an error verifying credentials', async () => {
-        const loginget = require('../models/loginModel/loginget');
+        const loginget = require('../models/loginModel/loginadminget');
         loginget.verifyCredentials.mockImplementation((ID_Administrador, Contrasena, callback) => {
             callback(new Error('Database error'), null);
         });
