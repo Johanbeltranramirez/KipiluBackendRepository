@@ -7,7 +7,7 @@ exports.up = function(knex) {
     table.string('S_Apellido', 20).nullable();
     table.string('Correo', 40).notNullable();
     table.string('Direccion', 40).notNullable();
-    table.string('Telefono', 20).notNullable();
+    table.string('Telefono', 15).notNullable();
     table.integer('ID_Animal').unsigned().notNullable();
 
     table.foreign('ID_Animal').references('ID_Animal').inTable('Animales');
