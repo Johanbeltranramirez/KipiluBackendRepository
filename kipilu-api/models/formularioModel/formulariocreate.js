@@ -4,10 +4,10 @@ const formularios = {};
 
 formularios.create = (formulariosData, result) => {
     console.log(JSON.stringify(formulariosData, null, 2));
-    const { Adoptante, Animal } = formulariosData; // Extraemos Adoptante y Animal de los datos del formulario
+    const { ID_Adoptante, ID_Animal } = formulariosData; // Extraemos Adoptante y Animal de los datos del formulario
 
     // Verifica que los valores de Adoptante y Animal no sean nulos o indefinidos
-    if (!Adoptante || !Animal) {
+    if (!ID_Adoptante || !ID_Animal) {
         const error = new Error('El campo Adoptante y Animal son obligatorios');
         console.error('Error al crear el formulario: ', error);
         result(error, null);
@@ -22,7 +22,7 @@ formularios.create = (formulariosData, result) => {
     };
 
     // Combinamos los valores predeterminados con los datos del formulario
-    const formData = { ...defaultValues, Adoptante, Animal };
+    const formData = { ...defaultValues, ID_Adoptante, ID_Animal };
 
     knex('formularios')
         .insert(formData)
