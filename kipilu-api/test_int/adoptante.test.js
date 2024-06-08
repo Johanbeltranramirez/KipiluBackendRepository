@@ -5,7 +5,7 @@ const app = express();
 const animalController = require('../controllers/animalController');
 const usersController = require('../controllers/usersController');
 
-// Mockeo de los módulos del modelo para evitar llamadas reales a la base de datos durante las pruebas
+// Mockear todas las dependencias de la base de datos
 jest.mock('../config/db/db', () => ({})); // Mockear el módulo de la base de datos
 jest.mock('../models/animalModel/animal', () => ({
     create: jest.fn(),
