@@ -3,7 +3,7 @@ const AnimalGet = require('../models/animalModel/animalget');
 const AnimalId = require('../models/animalModel/animalid');
 const AnimalDel = require('../models/animalModel/animaldelete');
 const AnimalUpdate = require('../models/animalModel/animalupdate');
-const AnimalAlter = require('../models/animalModel/animalalter');
+const AnimalAlter = require('../models/animalModel/animalAlter');
 
 module.exports = {
   createAnimal(req, res) {
