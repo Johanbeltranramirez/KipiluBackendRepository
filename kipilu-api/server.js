@@ -38,7 +38,7 @@ loginsuperadminRoutes(app);
 
 
 
-server.listen(3000,  '192.168.1.7' || 'localhost', function() {
+server.listen(3000,  '192.168.80.13' || 'localhost', function() {
 
 
 
