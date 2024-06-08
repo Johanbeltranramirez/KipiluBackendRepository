@@ -9,7 +9,7 @@ npx knex migrate:latest --knexfile ./config/knexfile.js
  
  (Antes de iniciar colocar el comando npm run-script)
 
- npm test **(Ejecutar todas las pruebas unitarias)**
+ npm test test_uni **(Ejecutar todas las pruebas unitarias)**
 
  npm test administradorController.test.js
  
