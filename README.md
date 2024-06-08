@@ -5,7 +5,7 @@ npx knex migrate:latest --knexfile ./config/knexfile.js
 Comandos para ejecutar las pruebas
  Antes de iniciar colocar el comando npm run-script
 
- npm test (Ejecutar todas las pruebas)
+ npm test (Ejecutar todas las pruebas unitarias)
 
  npm test administradorController.test.js
  
@@ -20,3 +20,11 @@ Comandos para ejecutar las pruebas
  npm test razaController.test.js
  
 npm test adoptanteController.test.js
+
+EJECUTAR PEUBAS INTEGRALES
+
+npm test test_int(Ejecutar todas las pruebas integrales)
+
+npm test test_int/adoptante.test.js
+
+npm test test_int/administrador.test.js
