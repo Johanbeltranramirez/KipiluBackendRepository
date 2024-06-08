@@ -1,11 +1,15 @@
 # KipiluBackendRepository
-Comando para realizar las migraciones (crear manualmente la BD kipiludb):
+
+
+**Comando para realizar las migraciones (crear manualmente la BD kipiludb):**
+
 npx knex migrate:latest --knexfile ./config/knexfile.js
 
-Comandos para ejecutar las pruebas
- Antes de iniciar colocar el comando npm run-script
+# EJECUTAR PRUEBAS UNITARIAS
+ 
+ **(Antes de iniciar colocar el comando npm run-script)**
 
- npm test (Ejecutar todas las pruebas unitarias)
+ npm test test_uni **(Ejecutar todas las pruebas unitarias)**
 
  npm test administradorController.test.js
  
@@ -23,7 +27,7 @@ npm test adoptanteController.test.js
 
 # EJECUTAR PRUEBAS INTEGRALES
 
-npm test test_int(Ejecutar todas las pruebas integrales)
+npm test test_int **(Ejecutar todas las pruebas integrales)**
 
 npm test test_int/adoptante.test.js
 
