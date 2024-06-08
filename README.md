@@ -7,7 +7,7 @@ npx knex migrate:latest --knexfile ./config/knexfile.js
 
 # EJECUTAR PRUEBAS UNITARIAS
  
- (Antes de iniciar colocar el comando npm run-script)
+ **(Antes de iniciar colocar el comando npm run-script)**
 
  npm test test_uni **(Ejecutar todas las pruebas unitarias)**
 
