@@ -5,6 +5,15 @@
 
 npx knex migrate:latest --knexfile ./config/knexfile.js
 
+**PAQUETES QUE SE NECESITAN INSTALAR**
+
+1- npm install express
+
+2- npm install knex
+
+3- npm install tedious --save
+
+
 # EJECUTAR PRUEBAS UNITARIAS
  
  **(Antes de iniciar colocar el comando npm run-script)**
