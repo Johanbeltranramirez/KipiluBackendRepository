@@ -5,7 +5,7 @@
 
 npx knex migrate:latest --knexfile ./config/knexfile.js
 
-**PAQUETES QUE SE NECESITAN INSTALAR**
+**Paquetes necesario para ejecutar el entorno de manera correcta**
 
 1- npm install express
 
