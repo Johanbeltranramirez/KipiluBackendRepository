@@ -169,7 +169,7 @@ describe('Animal Controller', () => {
     });
 
     it('should change the state of an animal by id', async () => {
-        const AnimalAlter = require('../models/animalModel/animalalter');
+        const AnimalAlter = require('../models/animalModel/animalAlter');
         AnimalAlter.updateStateById.mockImplementation((id, callback) => callback(null, { message: 'Estado del animal actualizado' }));
 
         const res = await request(app).patch('/api/animal/1/state');
@@ -180,7 +180,7 @@ describe('Animal Controller', () => {
     });
 
     it('should return 500 if there is an error changing the state of an animal', async () => {
-        const AnimalAlter = require('../models/animalModel/animalalter');
+        const AnimalAlter = require('../models/animalModel/animalAlter');
         AnimalAlter.updateStateById.mockImplementation((id, callback) => callback(new Error('Database error')));
 
         const res = await request(app).patch('/api/animal/1/state');
