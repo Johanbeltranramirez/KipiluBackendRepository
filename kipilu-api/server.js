@@ -4,8 +4,8 @@ const http = require('http');
 const server = http.createServer(app);
 const logger = require('morgan');
 const cors = require('cors');
-// Importar rutas
 
+// Importar rutas
 const administradorRoutes = require('./routes/administradorRoutes');
 const animalRoutes = require('./routes/animalRoutes');
 const usersRoutes = require('./routes/usersRouters');
@@ -15,7 +15,7 @@ const razaRoutes = require('./routes/razaRoutes');
 const loginadminRoutes = require('./routes/loginadminRoutes');
 const loginsuperadminRoutes = require('./routes/loginsuperadminRoutes');
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001; // Cambia 3000 a 3001 o cualquier otro puerto libre
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -33,16 +33,9 @@ razaRoutes(app);
 loginadminRoutes(app);
 loginsuperadminRoutes(app);
 
-
-// Dirección IP V4 de la máquina, consultar con ipconfig
-
-
-
-server.listen(3000,  '192.168.2.15' || 'localhost', function() {
-
-
-
-    console.log('Aplicación de NodeJS ' + process.pid + ' inicio en el puerto ' + port);
+// Inicio del servidor
+server.listen(port, '0.0.0.0', () => {
+    console.log(`Aplicación de NodeJS ${process.pid} inició en el puerto ${port}`);
 });
 
 app.get('/', (req, res) => {
