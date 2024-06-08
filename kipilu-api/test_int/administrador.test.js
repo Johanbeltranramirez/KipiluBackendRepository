@@ -5,6 +5,15 @@ const app = express();
 const loginController = require('../controllers/loginadminController');
 const formularioController = require('../controllers/formularioController');
 
+// Mockear todas las dependencias de la base de datos
+jest.mock('../config/db/db', () => ({})); // Mockear el módulo de la base de datos
+jest.mock('../models/loginModel/loginadminget', () => ({
+    verifyCredentials: jest.fn(),
+}));
+jest.mock('../models/formularioModel/formulariodelete', () => ({
+    delete: jest.fn(),
+}));
+
 app.use(bodyParser.json());
 
 // Endpoint para login
@@ -13,15 +22,11 @@ app.post('/api/login', loginController.login);
 // Endpoint para desactivar un formulario
 app.delete('/api/formulario/:id', formularioController.deactivateFormulario);
 
-jest.mock('../models/loginModel/loginadminget', () => ({
-    verifyCredentials: jest.fn(),
-}));
-
-jest.mock('../models/formularioModel/formulariodelete', () => ({
-  delete: jest.fn(),
-}));
-
 describe('Prueba de Integración: Login y Desactivación de Formulario', () => {
+    afterAll(() => {
+        jest.resetAllMocks(); // Restablecer todos los mocks después de todas las pruebas
+    });
+
     it('debería loguear al administrador y luego desactivar el formulario', async () => {
         // Mock para la verificación de credenciales
         const loginget = require('../models/loginModel/loginadminget');
@@ -52,5 +57,10 @@ describe('Prueba de Integración: Login y Desactivación de Formulario', () => {
         expect(formDesactivationRes.statusCode).toEqual(200);
         expect(formDesactivationRes.body.success).toBe(true);
         expect(formDesactivationRes.body.message).toBe('Formulario desactivado');
+    });
+
+    // Limpiar mocks después de cada prueba
+    afterEach(() => {
+        jest.clearAllMocks();
     });
 });
