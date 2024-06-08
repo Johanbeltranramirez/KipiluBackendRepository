@@ -1,5 +1,5 @@
 const knex = require('../../config/db/db');
-const AnimalAlter = require('../animalModel/animalalter');
+const AnimalAlter = require('../animalModel/animalAlter');
 
 const Adoptante = {};
 
