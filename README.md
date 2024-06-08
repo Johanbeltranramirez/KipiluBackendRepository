@@ -21,7 +21,7 @@ Comandos para ejecutar las pruebas
  
 npm test adoptanteController.test.js
 
-EJECUTAR PEUBAS INTEGRALES
+# EJECUTAR PRUEBAS INTEGRALES
 
 npm test test_int(Ejecutar todas las pruebas integrales)
 
