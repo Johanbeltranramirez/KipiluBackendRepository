@@ -2,14 +2,22 @@ const knex = require('knex');
 
 const knexConfig = {
   development: {
-    client: 'mysql',
+    client: 'mssql',
     connection: {
-      host: 'localhost',
-      user: 'root',
-      password: '',
-      database: 'kipiludb'
+      server: 'kipiluservidor.database.windows.net',
+      user: 'kipilu',
+      password: '010706Yo',
+      database: 'kipiludb',
+      options: {
+        encrypt: true // Si tu servidor requiere conexión segura (SSL/TLS), asegúrate de habilitar esta opción
+      }
+    },
+    pool: {
+      min: 0,
+      max: 10
     },
     migrations: {
+      tableName: 'knex_migrations',
       directory: 'db/migrations'
     }
   }
