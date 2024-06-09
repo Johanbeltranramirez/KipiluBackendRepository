@@ -44,6 +44,7 @@ npm test test_int/administrador.test.js
 
 # DOC PRUEBAS 
 
- **Enlac:** https://soysena-my.sharepoint.com/:f:/g/personal/juammillan_soy_sena_edu_co/Eigxorr5XO1JibCT1W9_sVQB-vwxq6jBiQwTIrT2I0rBQA?e=MwleYe
+ **Enlace:** https://soysena-my.sharepoint.com/:f:/g/personal/juammillan_soy_sena_edu_co/Eigxorr5XO1JibCT1W9_sVQB-vwxq6jBiQwTIrT2I0rBQA?e=MwleYe
+ 
  **Enlace pruebas funcionales:** https://documenter.getpostman.com/view/33412547/2sA3XLDiGw
 
