@@ -34,5 +34,29 @@ module.exports = {
         data: razas
       });
     });
+  },
+
+  deleteRaza(req, res) {
+    const id = req.params.id;
+    Raza.delete(id, (err, data) => {
+      if (err) {
+        if (err.kind === "not_found") {
+          return res.status(404).json({
+            success: false,
+            message: `No se encontró la raza con ID ${id}.`
+          });
+        } else {
+          return res.status(500).json({
+            success: false,
+            message: `Error al eliminar la raza con ID ${id}.`,
+            error: err
+          });
+        }
+      }
+      return res.status(200).json({
+        success: true,
+        message: "Raza eliminada correctamente"
+      });
+    });
   }
 };

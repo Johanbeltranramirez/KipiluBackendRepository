@@ -32,4 +32,23 @@ Raza.getAll = (result) => {
         });
 };
 
+Raza.delete = (id, result) => {
+    knex('Razas')
+        .where('ID_Raza', id)
+        .del()
+        .then((res) => {
+            if (res) {
+                console.log(`Raza con ID ${id} eliminada.`);
+                result(null, res);
+            } else {
+                console.log(`No se encontró la raza con ID ${id}.`);
+                result({ kind: "not_found" }, null);
+            }
+        })
+        .catch((err) => {
+            console.log('Error al eliminar la raza: ', err);
+            result(err, null);
+        });
+};
+
 module.exports = Raza;
