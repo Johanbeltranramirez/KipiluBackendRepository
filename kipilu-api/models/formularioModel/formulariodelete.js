@@ -4,9 +4,9 @@ const formulariodelete = {};
 
 // Método para eliminar un formulario por su ID solo si está en estado "Aprobado" o "No Aprobado"
 formulariodelete.delete = (IdForm, result) => {
-    knex('formularios')
+    knex('Formularios')
         .where('ID_Formulario', IdForm)
-        .whereIn('ID_Solicitud', function() {
+        .whereIn('Estado_solicitud', function() {
             this.select('ID_Solicitud').from('Estados_Solicitudes').whereIn('Estado_Solicitud', ['Aprobado', 'No Aprobado']);
         })
         .del()
