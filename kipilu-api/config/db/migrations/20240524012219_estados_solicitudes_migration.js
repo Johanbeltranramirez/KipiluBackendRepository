@@ -1,19 +1,23 @@
-exports.up = function(knex) {
-    return knex.schema.createTable('Estados_Solicitudes', function(table) {
-      table.integer('ID_Solicitud').unsigned().notNullable().primary();
-      table.string('Estado_Solicitud', 15).notNullable();
-    })
-    .then(function() {
-      // Insertar datos
-      return knex('Estados_Solicitudes').insert([
-        { ID_Solicitud: 1, Estado_Solicitud: 'Aprobado' },
-        { ID_Solicitud: 2, Estado_Solicitud: 'No Aprobado' },
-        { ID_Solicitud: 3, Estado_Solicitud: 'Pendiente' }
-      ]);
-    });
-  };
-  
-  exports.down = function(knex) {
-    return knex.schema.dropTable('Estados_Solicitudes');
-  };
-  
+const knex = require('../../config/db/db');
+
+const formulariodelete = {};
+
+// Método para eliminar un formulario por su ID solo si está en estado "Aprobado"
+formulariodelete.delete = (IdForm, result) => {
+    knex('formularios')
+        .where('ID_Formulario', IdForm)
+        .whereIn('ID_Solicitud', function() {
+            this.select('ID_Solicitud').from('Estados_Solicitudes').where('Estado_Solicitud', 'Aprobado');
+        })
+        .del()
+        .then(() => {
+            console.log('Formulario eliminado correctamente');
+            result(null, { message: 'Formulario eliminado correctamente' });
+        })
+        .catch((err) => {
+            console.log('Error al eliminar el formulario: ', err);
+            result(err, null);
+        });
+};
+
+module.exports = formulariodelete;
