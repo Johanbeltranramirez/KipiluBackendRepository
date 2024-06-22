@@ -2,10 +2,13 @@ const knex = require('../../config/db/db');
 
 const formulariodelete = {};
 
-// Método para eliminar un formulario por su ID
+// Método para eliminar un formulario por su ID solo si está en estado "Aprobado"
 formulariodelete.delete = (IdForm, result) => {
     knex('formularios')
         .where('ID_Formulario', IdForm)
+        .whereIn('ID_Solicitud', function() {
+            this.select('ID_Solicitud').from('Estados_Solicitudes').where('Estado_Solicitud', 'Aprobado');
+        })
         .del()
         .then(() => {
             console.log('Formulario eliminado correctamente');
