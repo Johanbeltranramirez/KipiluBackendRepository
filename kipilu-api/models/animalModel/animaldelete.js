@@ -13,13 +13,17 @@ AnimalDel.delete = (animalId, result) => {
                 return Promise.reject({ message: 'Animal no encontrado' });
             }
 
-            if (animal.Estado_Animal !== 1) { // Estado_Animal 1 es 'Adoptado'
-                return Promise.reject({ message: 'No se puede eliminar un animal que no esté en estado Adoptado' });
+            if (animal.Estado_Animal === 1) { // Estado_Animal 1 es 'Adoptado'
+                return knex('Animales')
+                    .where('ID_Animal', animalId)
+                    .del();
+            } else if (animal.Estado_Animal === 2) { // Estado_Animal 2 es 'No Adoptado'
+                return Promise.reject({ message: 'No se puede eliminar un animal que no ha sido adoptado' });
+            } else if (animal.Estado_Animal === 3) { // Estado_Animal 3 es 'En Proceso de Adopción'
+                return Promise.reject({ message: 'No se puede eliminar un animal en proceso de adopción' });
+            } else {
+                return Promise.reject({ message: 'Estado del animal no reconocido' });
             }
-
-            return knex('Animales')
-                .where('ID_Animal', animalId)
-                .del();
         })
         .then(() => {
             console.log('Animal eliminado correctamente');
